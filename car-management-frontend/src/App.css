@@ -1,0 +1,137 @@
+/* src/App.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #fff; /* Default text color to white for visibility */
+  height: 100vh; /* Set height to full viewport */
+  overflow: hidden; /* Prevent scrollbars from appearing */
+  background-size: cover; /* Ensure the background covers the full area */
+  background-position: center; /* Center the background image */
+}
+
+nav {
+  background: rgba(51, 51, 51, 0.8); /* Semi-transparent background for navigation */
+  color: #fff; /* White text color in navigation */
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff; /* White link color */
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5); /* Optional: slightly darken container to improve text visibility */
+  border-radius: 5px;
+}
+
+h1, h2, h3 {
+  color: #fff; /* White color for headings */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin: 10px 0 5px;
+  color: #fff; /* White color for form labels */
+}
+
+form input, form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #218838;
+}
+
+.car-list {
+  list-style: none;
+  padding: 0;
+}
+
+.car-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.car-list li button {
+  background: #dc3545;
+}
+
+.car-list li button:hover {
+  background: #c82333;
+}
+
+/* Background Images for Each Page */
+.home {
+  background-image: url('./assets/background-home.jpg');
+}
+
+.about {
+  background-image: url('./assets/backgorund-about.jpg');
+}
+
+.cars {
+  background-image: url('./assets/background-cars.jpg');
+}
+
+.car-form {
+  background-image: url('./assets/background-car-form.jpg');
+}
+
+.login {
+  background-image: url('./assets/background-login.jpg');
+}
+
+.signup {
+  background-image: url('./assets/background-signup.jpg');
+}
+
+.default {
+  background-image: url('./assets/background-default.jpg');
+}
+
+/* General styles for background */
+.home, .about, .cars, .car-form, .login, .signup, .default {
+  height: 100vh; /* Ensure each page takes full viewport height */
+  background-size: cover; /* Cover the full area */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent background image from repeating */
+}
